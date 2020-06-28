@@ -8,7 +8,7 @@ conn = sqlite3.connect('instagram_project.sqlite')
 curr= conn.cursor()
 curr.execute("CREATE TABLE IF NOT EXISTS followers(ID INTEGER PRIMARY KEY AUTOINCREMENT, Username TEXT , name TEXT)")
 
-driver = webdriver.Firefox(executable_path="C:\\Users\\Sumit\\Documents\\Py codes\\geckodriver")
+driver = webdriver.Firefox(executable_path="path of webdriver") # it is firefox here, but you can use your own browser
 driver.get("https://instagram.com/")
 sleep(1.5)
 
